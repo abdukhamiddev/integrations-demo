@@ -1,0 +1,42 @@
+{
+  "name": "@plasmicpkgs/plasmic-sanity-io",
+  "version": "1.0.79",
+  "description": "Plasmic Sanity.io components.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/plasmic-sanity-io.esm.js",
+  "files": [
+    "dist"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/plasmic-sanity-io.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/plasmic-sanity-io.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "dependencies": {
+    "@plasmicapp/host": "^1.0.91",
+    "@plasmicapp/query": "^0.1.57",
+    "@sanity/client": "^3.3.0",
+    "@sanity/image-url": "^1.0.1",
+    "change-case": "^4.1.2",
+    "dlv": "^1.1.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "yalcSig": "3c686f8689bc138d38c22415245fb7f2"
+}

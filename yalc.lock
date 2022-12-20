@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "packages": {
+    "@plasmicpkgs/plasmic-contentstack": {
+      "signature": "45e163acf6be104270e0a9f4ffcac024",
+      "file": true
+    },
+    "@plasmicpkgs/plasmic-contentful": {
+      "signature": "dda529557918bc4354d4645df89f3d5d",
+      "file": true
+    },
+    "@plasmicpkgs/plasmic-sanity-io": {
+      "signature": "3c686f8689bc138d38c22415245fb7f2",
+      "file": true
+    },
+    "@plasmicpkgs/plasmic-strapi": {
+      "signature": "375def945e7114d03beb5762026740c0",
+      "file": true
+    },
+    "@plasmicpkgs/plasmic-wordpress": {
+      "signature": "f59469776ee9fc410768a71a07586b57",
+      "file": true
+    }
+  }
+}

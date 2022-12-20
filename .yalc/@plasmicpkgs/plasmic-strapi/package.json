@@ -1,0 +1,43 @@
+{
+  "name": "@plasmicpkgs/plasmic-strapi",
+  "version": "0.1.62",
+  "description": "Plasmic Strapi components.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/plasmic-strapi.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "size-limit": [
+    {
+      "path": "dist/plasmic-strapi.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/plasmic-strapi.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "dependencies": {
+    "@plasmicapp/host": "^1.0.91",
+    "@plasmicapp/query": "0.1.57",
+    "@types/dlv": "^1.1.2",
+    "change-case": "^4.1.2",
+    "dlv": "^1.1.3"
+  },
+  "yalcSig": "375def945e7114d03beb5762026740c0"
+}
